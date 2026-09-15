@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitZone Gym</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>FitZone</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#plans">Plans</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#register">Join Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h2>Build Your Stronger Body</h2>
+
+            <p>
+                Train hard, stay healthy and reach your goals with FitZone.
+            </p>
+
+            <button id="joinButton">
+                Join Us
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Strength Training</h3>
+
+                <p>
+                    Build your muscles and improve your strength.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Cardio</h3>
+
+                <p>
+                    Improve your fitness and stay active.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Personal Training</h3>
+
+                <p>
+                    Train with a personal fitness coach.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  
+
+<!-- Plans -->
+<section id="plans">
+
+    <h2>Membership Plans</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Basic</h3>
+
+            <p>€19 / month</p>
+
+            <button onclick="choosePlan('Basic')">
+                Choose Plan
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Standard</h3>
+
+            <p>€29 / month</p>
+
+            <button onclick="choosePlan('Standard')">
+                Choose Plan
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Premium</h3>
+
+            <p>€49 / month</p>
+
+            <button onclick="choosePlan('Premium')">
+                Choose Plan
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+    <!-- Trainers -->
+    <section id="trainers">
+
+        <h2>Our Trainers</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Adam</h3>
+
+                <p>
+                    Fitness Trainer
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Sarah</h3>
+
+                <p>
+                    Personal Trainer
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Youssef</h3>
+
+                <p>
+                    Strength Coach
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Registration Form -->
+    <section id="register">
+
+        <h2>Join FitZone</h2>
+
+        <form id="registerForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+
+            <select id="plan" required>
+
+                <option value="">
+                    Choose a Plan
+                </option>
+
+                <option value="Basic">
+                    Basic - €19
+                </option>
+
+                <option value="Standard">
+                    Standard - €29
+                </option>
+
+                <option value="Premium">
+                    Premium - €49
+                </option>
+
+            </select>
+
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Email: contact@fitzone.com
+        </p>
+
+        <p>
+            Phone: +49 123 456789
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 FitZone
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
